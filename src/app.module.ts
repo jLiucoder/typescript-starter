@@ -10,12 +10,12 @@ import { Task } from './typeorm/Task';
     imports: [
         TasksModule,
         TypeOrmModule.forRoot({
-            type: 'mysql',
-            host: 'localhost',
-            port: 3306,
-            username: 'root',
-            password: 'password',
-            database: 'tasks_db',
+            type: 'postgres',
+            host: 'dpg-cj40qpt9aq0e0q2hgj60-a',
+            port: 5432,
+            username: 'dbname_c7aw_user',
+            password: 'gWh2LBXzeQpOs2gBEuK83cCCOi8vCUqf',
+            database: 'dbname_c7aw',
             entities: [Task],
             synchronize: true,
         }),
