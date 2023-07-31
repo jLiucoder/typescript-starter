@@ -18,6 +18,7 @@ import { Task } from './typeorm/Task';
             database: 'dbname_c7aw',
             entities: [Task],
             synchronize: true,
+            url: 'postgres://dbname_c7aw_user:gWh2LBXzeQpOs2gBEuK83cCCOi8vCUqf@dpg-cj40qpt9aq0e0q2hgj60-a/dbname_c7aw',
         }),
     ],
     controllers: [AppController],
