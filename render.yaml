@@ -8,5 +8,4 @@ services:
     startCommand: npm run start
     
 databases:
-  - name: postgres
-    databaseName: postgres # optional (Render may add a suffix)
+  - name: mydb
