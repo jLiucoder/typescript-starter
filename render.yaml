@@ -9,3 +9,4 @@ services:
     
 databases:
   - name: mydb
+  - plan: free
