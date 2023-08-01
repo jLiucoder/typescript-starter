@@ -6,6 +6,33 @@ services:
     repo: https://github.com/jLiucoder/typescript-starter
     buildCommand: npm install; npm run build
     startCommand: npm run start
+    envVars:
+    - key: NODE_VERSION
+      value: 18
+    - key: DB_HOST
+      fromDatabase:
+        name: mydb
+        property: host      
+    - key: DB_PORT
+      fromDatabase:
+        name: mydb
+        property: port   
+    - key: DB_USERNAME
+      fromDatabase:
+        name: mydb
+        property: user
+    - key: DB_DATABASE
+      fromDatabase:
+        name: mydb
+        property: database         
+    - key: DB_PASSWORD
+      fromDatabase:
+        name: mydb
+        property: password
+    - key: DB_URL
+      fromDatabase:
+        name: mydb
+        property: url
     
 databases:
   - name: mydb
