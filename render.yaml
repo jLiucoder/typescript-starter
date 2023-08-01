@@ -32,7 +32,7 @@ services:
     - key: DB_URL
       fromDatabase:
         name: mydb
-        property: url
+        property: connectionString
     
 databases:
   - name: mydb
