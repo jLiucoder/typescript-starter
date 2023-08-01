@@ -30,7 +30,7 @@ dotenv.config();
             entities: [Task],
             synchronize: true,
             url:process.env.DB_URL,
-            ssl: true,
+            ssl: false,
         }),
     ],
     controllers: [AppController],
