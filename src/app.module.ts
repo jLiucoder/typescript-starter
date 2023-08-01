@@ -30,8 +30,12 @@ dotenv.config();
             entities: [Task],
             synchronize: true,
             url:process.env.DB_URL,
-            ssl: false,
-        }),
+            extra: {
+                ssl: {
+                  rejectUnauthorized: false
+                }
+            }
+            }),
     ],
     controllers: [AppController],
     providers: [AppService],
