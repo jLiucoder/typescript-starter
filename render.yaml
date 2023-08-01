@@ -1,0 +1,12 @@
+service:
+  - type: web
+    name: backendAPI
+    plan: free
+    runtime: node
+    repo: https://github.com/jLiucoder/typescript-starter
+    buildCommand: npm install; npm run build
+    startCommand: npm run start
+    
+databases:
+  - name: postgres
+    databaseName: postgres # optional (Render may add a suffix)
