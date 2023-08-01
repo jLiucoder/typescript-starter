@@ -9,5 +9,5 @@ services:
     
 databases:
   - name: mydb
-  - user: backendAPI
-  - plan: free
+    user: backendAPI
+    plan: free
